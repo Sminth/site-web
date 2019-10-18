@@ -154,17 +154,17 @@ function filtreNombre(e) {
   return "0123456789".indexOf(s) == -1; }
 </script>
 <script type="text/javascript">
-Email.send ({
-    Hôte: "smtp.yourisp.com",
-    Nom d'utilisateur: "nom d'utilisateur",
-    Mot de passe: "mot de passe",
-    À: 'them@website.com',
-    De: "you@isp.com",
-    Sujet: "Ceci est le sujet",
-    Body: "Et c'est le corps"
-}).ensuite(
-  message => alerte (message)
-)
+Email.send({
+    Host : "smtp.gmail.com",
+    Username : "emmanuelmalan225@gmail.com",
+    Password : "kassi225",
+    To : 'expertproffessionnel@gmail.com',
+    From : "emmanuelmalan225@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
 </script>
 </body>
 </html>

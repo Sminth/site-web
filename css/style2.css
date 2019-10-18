@@ -1,0 +1,157 @@
+#bouton1,#bouton2 {
+    height: 46px;
+    width: 190px;
+
+    line-height: 43px;*/
+    color: #232d37;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #744fff 0%, #21d397 51%, #744fff 100%);
+    text-align: center;
+    background-size: 200% auto;
+    z-index: 2;
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    cursor: pointer;
+    margin: auto 20px auto 20px;
+}
+
+#bouton1:hover, #bouton2:hover{
+  background-image: linear-gradient(to right, #21d397 0%, #744fff 51%, #744fff 100%);
+}
+.bouton a{
+  text-decoration: none;
+  color: black;
+}
+.service1{
+  cursor: pointer;
+  box-shadow:0px 0px 10px rgba(0, 0, 0, 0.18);
+  background-color: white;
+  width: 500px;
+  margin-left:330px;
+  margin-bottom: 10px;
+  height: 350px;
+  border:2px solid #f9f9ff;
+  border-radius: 5%;
+}
+#im1{
+  margin-top: 5%;
+  width: 100%;
+  height: 20%;
+}
+#headerwrap{
+  background-image: url("../img/fond.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 300px;
+  background-size: auto;
+  /*background-blend-mode: luminosity;*/
+}
+.noImage{
+  background-color: #34495E;
+  height: 300px;
+  color:white;
+  padding-top: 90px;
+}
+#lieu{
+  background-image: url("../img/aran.jpg");
+  background-repeat: no-repeat;
+  height: 400px;
+  background-size: contain;
+}
+
+#localise{
+  padding-top: 1px;
+}
+#geo{
+
+  float:right;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 0px 20px #c0c0c0;
+  background-color: white;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+#geo img{
+  width: 200px;
+  height: 200px;
+}
+/*#fond{
+
+  background-image: url("../img/pro_tele.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+}*/
+
+#text{
+  margin: 0px 0px;
+  height: 0%;
+}
+#text p{
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  cursor: text;
+}
+#text p::selection{
+  color:white;
+  background-color:#fab700;
+}
+
+
+.service1:hover{
+  background-color: #fab700;
+  box-shadow: 0px 0px 10px black;
+}
+#expl{
+  background-color: #d3841d;
+  min-height: 150px;
+}
+#ref{
+  padding-top: 20px;
+  font-family: "Arial Black" "Poppins" ;
+  text-align: center;
+  color: black;
+}
+
+@media screen and (max-width:500px){
+  #home h1{
+    font-size: 40px;
+    }
+    .service1{
+      width: 300px;
+      height: auto;
+      margin-left:-3px;
+      }
+#headerwrap{
+  padding-bottom: 200px;
+  background-size: auto;
+  /*background-blend-mode: luminosity;*/
+}
+#lieu{
+  background-image: url("../img/lieu.jpg");
+  background-repeat: no-repeat;
+  height: 300px;
+  background-size: contain;
+}
+
+#geo{
+  display: none;
+}
+#geo img{
+  width: 200px;
+  height: 200px;
+}
+#contact{
+  margin-top: 200px;
+}
+#frame iframe{
+  width: 300px;
+  height:300px
+}
+}

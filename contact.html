@@ -26,6 +26,22 @@
     Contact : 88364403
     email:emmanuelmalan225@gmail.com
   ======================================================= -->
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_mI5tqOqeAj9J3bkqKLXvV");
+   })();
+</script>
+<script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate the contact number value
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('contact_service', 'contact_template', this);
+            });
+        }
+    </script>
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navigation">
@@ -93,8 +109,9 @@
 
             <br>
             <br><br><br>
-            <form class="contact-form php-mail-form" role="form" method="POST">
+            <form class="contact-form php-mail-form" role="form" method="POST" id="contact-form">
               <div class="form-group">
+	<input type="hidden" name="contact_number">
                 <label for="contact-name">Nom</label>
                 <input type="name" name="name" class="form-control" id="contact-name" placeholder="Votre Nom" data-rule="minlen:4" data-msg="Entrez 4 caractere au minimum">
                 <div class="validate"></div>
@@ -152,19 +169,6 @@ function filtreNombre(e) {
     keynum = e.which; }
    var s = String.fromCharCode(keynum);
   return "0123456789".indexOf(s) == -1; }
-</script>
-<script type="text/javascript">
-Email.send({
-    Host : "smtp.gmail.com",
-    Username : "emmanuelmalan225@gmail.com",
-    Password : "kassi225",
-    To : 'expertproffessionnel@gmail.com',
-    From : "emmanuelmalan225@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
 </script>
 </body>
 </html>

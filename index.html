@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="utf-8">
+  <title>Telvision Pro</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <!-- icon -->
+  <link href="img/intro03.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style2.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Auteur : Emmanuel Malan
+    Contact : 88364403
+    email:emmanuelmalan225@gmail.com
+  ======================================================= -->
+  <script type="text/javascript">
+    var Lscreen=screen.width;
+    var Hscreen=screen.height;
+    //alert("la largeur de l'ecran est "+Lscreen);
+    //alert(Hscreen);
+    if (Lscreen<500) {
+      var titre=document.getElementById('h3');
+    }
+  </script>
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navigation">
+
+  <!-- Fixed navbar -->
+  <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand smothscroll" href="#home"><b>Pro Television</b></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#home" class="smothscroll">Accueil</a></li>
+          <li><a href="#desc" class="smothscroll">Presentation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <section id="home" name="home">
+    <div id="headerwrap">
+      <div class="container">
+        <div class="row centered">
+          <div style="margin-top:80px" class="col-lg-12 col-md-12 col-xs-12 col-ms-12">
+            <h1 style="color:#3498DB; text-shadow:0px 12px 10px white;" id="titre" ><b>Pro Television</b></h3>
+            <h3 id="h3"><strong>confier votre télévision à des experts.</strong></h3>
+          </div>
+
+        </div>
+      </div>
+      <!--/ .container -->
+    </div>
+    <!--/ #headerwrap -->
+  </section>
+
+<div id="image">
+  <script language="JavaScript">
+//largeur du texte défilant (en pixels)
+var marqueewidth=330;
+//hauteur du texte défilant (en pixels,Netscape)
+var marqueeheight=20;
+//vitesse de défilement du texte
+var speed=6;
+//contenu du texte défilant
+var marqueecontents='<font color=black face=Arial><strong><big>Pro_Television</big> </strong>reparateur proffesionnel de television - <strong><big>contact : 89 84 86 11</big> </strong> - angre cocovico</font>';
+
+document.write('<marquee scrollAmount='+speed+' style="width:'+marqueewidth+'">'+marqueecontents+'</marquee>');
+
+function regenerate(){
+window.location.reload();
+}
+function regenerate2(){
+if (document.layers){
+setTimeout("window.onresize=regenerate",450);
+intializemarquee();
+}
+}
+
+function intializemarquee(){
+document.cmarquee01.document.cmarquee02.document.write('<nobr>'+marqueecontents+'</nobr>');
+document.cmarquee01.document.cmarquee02.document.close();
+thelength=document.cmarquee01.document.cmarquee02.document.width;
+scrollit();
+}
+
+function scrollit(){
+if (document.cmarquee01.document.cmarquee02.left>=thelength*(-1)){
+document.cmarquee01.document.cmarquee02.left-=speed;
+setTimeout("scrollit()",100);
+}
+else{
+document.cmarquee01.document.cmarquee02.left=marqueewidth;
+scrollit();
+}
+}
+
+window.onload=regenerate2;
+</script>
+  <img style="float:right;margin:-50px 20px 20px 20px ;" src="img/intro03.png" alt="une television">
+
+</div>
+  <section id="desc" name="desc">
+    <!-- INTRO WRAP -->
+
+    <div id="intro">
+      <div class="container">
+        <div id="fond" class="row centered">
+          <h1>QUI SOMMES-NOUS ? </h1>
+          <br>
+          <br>
+          <div id="gauche">
+            <p style="font-size:20px;"><b>Pro Television</b> est une équipe d'expert qui vous propose des services de réparation de television <br>
+            Notre Objectif est de vous offrir des services de qualités. Nous sommes performants et rapide avec des prix abordable. <br>
+            Nous réparons toutes les marques de télévisions sans exception :)<br><br>
+
+            <i>Confier votre television à des experts dès aujourd'hui !</i></p>
+            <div class="bouton">
+              <a href="contact.html"><p id="bouton1">Nous contacter</p></a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr>
+      </div>
+      <!--/ .container -->
+    </div>
+    <!--/ #introwrap -->
+
+    <!--SERVICES -->
+    <div id="features">
+      <div class="container">
+        <div class="row">
+          <!--<h1 class="centered">NOS SERVICES</h1>-->
+          <p style="text-align:center;font-size:25px;color:red;">nous offrons des services de qualités</p>
+          <br>
+          <br>
+            <div class="col-lg-10 col-sm-10 col-xs-10 ">
+              <div class="service1">
+                <div style="text-align:center;"id="im1">
+                  <img width="100px" height="50px" src="img\vis.jpg" alt="">
+                </div>
+                <div id="text">
+                  <p> <b>Reparation de télévision</b> </p>
+                  <p>Nous reparons des télevisions de toutes marques <br>
+                  <b> Sony LG Panasonic Thomson Sharp Toshiba Philips </b><br><br>
+                    la réparation de TV plasma est notre expertise. <br>
+                  </p>
+                </div>
+            </div>
+            </div>
+          </div>
+      <!--/ .container -->
+    </div>
+    <!--/ #features -->
+    </div>
+  </div>
+  </section>
+  <section id="showcase" name="showcase">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-4">
+            <div id="carousel-example-generic" class="carousel slide">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#television" data-slide-to="0" class="active"></li>
+                <li data-target="#autre-television" data-slide-to="1"></li>
+                <li data-target="#television" data-slide-to="2" ></li>
+                <li data-target="#television" data-slide-to="3" ></li>
+                <li data-target="#autre-television" data-slide-to="4"></li>
+                <li data-target="#television" data-slide-to="5"></li>
+                <li data-target="#autre-television" data-slide-to="6"></li>
+                <li data-target="#autre-television" data-slide-to="7"></li>
+                <li data-target="#television" data-slide-to="8" ></li>
+                <li data-target="#autre-television" data-slide-to="9"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div style="width:300px;height:200px;" class="item active">
+                  <img style="width:300px;height:200px;" src="img/plasma1.jpg" alt="">
+                </div>
+
+                <div style="width:300px;height:200px;" class="item">
+                  <img style="width:300px;height:200px;" src="img/item0.jpg" alt="">
+                </div>
+
+                <div style="width:300px;height:200px;" class="item">
+                  <img style="width:300px;height:200px;" src="img/plasma.jpg" alt="">
+                </div>
+
+                <div style="width:300px;height:200px;" class="item">
+                  <img style="width:300px;height:200px;" src="img/plasma2.jpg" alt="">
+                </div>
+
+                <div style="width:300px;height:200px;" class="item">
+                  <img style="width:300px;height:200px;" src="img/item3.jpg" alt="">
+                </div>
+                <div style="width:300px;height:200px;" class="item">
+                  <img style="width:300px;height:200px;" src="img/item4.jpg" alt="">
+                </div>
+                <div style="width:300px;height:200px;" class="item">
+                  <img style="width:300px;height:200px;" src="img/item6.jpg" alt="">
+                </div>
+                <div style="width:300px;height:200px;" class="item">
+                  <img style="width:300px;height:200px;" src="img/item5.jpg" alt="">
+                </div>
+
+                <div style="width:300px;height:200px;" class="item">
+                  <img style="width:300px;height:200px;" src="img/item7.jpg" alt="">
+                </div>
+                <div style="width:300px;height:200px;" class="item">
+                  <img style="width:300px;height:200px;" src="img/item8.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section id=localise>
+    <div class="container">
+      <div class="rows">
+        <div class="col-lg-5">
+
+          <h2 style="font-size:50px;">OU NOUS TROUVER ?</h2>
+          <p style="font-size: 20px;">Nous sommes situé au marché cocovico de Cocody Angre <br>
+          <b>Contact: +225 88 36 44 03 </b></p>
+
+        </div>
+        <div id="lieu" class="col-lg-7">
+          <div  id="geo">
+            <img src="img/lieu.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container col-lg-12" id="expl" >
+      <div class="rows">
+        <div id="ref" class="col-lg-3">
+          <b style="font-size: 45px;">10000</b>
+          <p>Reparation éffectuée</p>
+        </div>
+        <div id="ref" class="col-lg-3">
+          <b style="font-size: 45px;">9000</b>
+          <p>Client satisfait</p>
+        </div>
+        <div id="ref" class="col-lg-3">
+          <b style="font-size: 45px;">500</b>
+          <p>Recommandation</p>
+        </div>
+        <div id="ref" class="col-lg-3">
+          <b style="font-size: 45px;">AA</b>
+          <p >service professionnel</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; Copyrights 2019. Tout droit réservé
+      </p>
+      <div class="credits">
+        <!--
+          You are NOT allowed to delete the credit link to TemplateMag with free version.
+          You can delete the credit link only if you bought the pro version.
+          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/pratt-app-landing-page-template/
+          Licensing information: https://templatemag.com/license/
+        -->
+        Crée avec coeur par sminth:88-36-44-03
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

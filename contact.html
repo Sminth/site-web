@@ -153,5 +153,18 @@ function filtreNombre(e) {
    var s = String.fromCharCode(keynum);
   return "0123456789".indexOf(s) == -1; }
 </script>
+<script type="text/javascript">
+Email.send ({
+    Hôte: "smtp.yourisp.com",
+    Nom d'utilisateur: "nom d'utilisateur",
+    Mot de passe: "mot de passe",
+    À: 'them@website.com',
+    De: "you@isp.com",
+    Sujet: "Ceci est le sujet",
+    Body: "Et c'est le corps"
+}).ensuite(
+  message => alerte (message)
+)
+</script>
 </body>
 </html>
